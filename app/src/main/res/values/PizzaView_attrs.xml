@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--name为声明的"属性集合"，最好和自定义的view名称一致-->
+    <declare-styleable name="PizzaView">
+        <!--声明自定义属性 format 是类型 有以下几种类型：
+           color ：颜色值   <Button zkx:textColor="#ff0000"/>
+           reference：参考指定Theme中资源ID  <Buttonzkx:label="@string/label" >
+           boolean：布尔值 <Button zkx:isVisible="false"/>
+           dimension：尺寸值  <Button zkx:myWidth="100dip"/>
+           float：浮点型  <alpha zkx:fromAlpha="0.3"/>
+           integer：整型    <animated-rotate zkx:framesCount="22"/>
+           string：字符串 <Button zkx:text="button"/>
+           fraction：百分数 <rotate zkx:pivotX="200%"/>
+           enum：枚举    <Button zkx:type="1"/>
+           flag：位或运算  <activity android:windowSoftInputMode="stateUnspecified | adjustNothing">
+        -->
+        <attr name="pzDefaultFullColor" format="color" />
+        <attr name="pzFullColor" format="color" />
+        <attr name="pzOutLineColor" format="color" />
+        <attr name="pzOutLineSize" format="dimension" />
+        <attr name="pzTotalPiece" format="integer" />
+        <attr name="pzCurrentPiece" format="integer" />
+        <attr name="pzHeight" format="dimension" />
+        <attr name="pzWidth" format="dimension" />
+    </declare-styleable>
+</resources>
